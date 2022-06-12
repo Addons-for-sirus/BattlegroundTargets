@@ -120,7 +120,7 @@ elseif locale == "ruRU" then
 		["Человек"] = ALLIANCE,
 		["Нежить"] = HORDE,
 		["Дворф"] = ALLIANCE,
-		["Эльфийка крови"] = HORDE,
+		-- ["Эльфийка крови"] = HORDE,
 		["Ночной эльф"] = ALLIANCE,
 		["Орк"] = HORDE,
 		["Гном"] = ALLIANCE,
@@ -178,7 +178,7 @@ elseif locale == "zhTW" then
 else
 	BattlegroundTargets_RaceNames = {
 		["Draenei"] = ALLIANCE,
-		["Worgen"] = ALLIANCE,
+		-- ["Worgen"] = ALLIANCE,
 		["Blood Elf"] = HORDE,
 		["Orc"] = HORDE,
 		["Gnome"] = ALLIANCE,
