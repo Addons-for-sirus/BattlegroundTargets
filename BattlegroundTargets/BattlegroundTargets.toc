@@ -2,7 +2,7 @@
 ## Author: kunda
 ## Title: BattlegroundTargets
 ## Notes: Показывает всех врагов на поле боя. Адаптация для Sirus - https://discord.gg/5JPxXZsj
-## Version: 1.2
+## Version: 1.3
 ## Notes-zhCN: 显示全部战场敌人。战场简洁敌对单位框体。
 ## Notes-zhTW: 顯示全部戰場敵人。戰場簡潔敵對單位框體。
 ## SavedVariables: BattlegroundTargets_Options, BattlegroundTargets_HealersDB 
@@ -12,7 +12,7 @@
 ## X-Curse-Project-ID: battlegroundtargets
 ## X-Curse-Repository-ID: wow/battlegroundtargets/mainline
 ## X-CrossFrac-Version-Authors: Nobrainx. Tests and feedback: Jud
-## X-Sirus-Version-Authors: Nobrainx, Apolexis
+## X-Sirus-Version-Authors: Nobrainx, FXPW, Apolexis, Dister
 
 BattlegroundTargets-localized-bgnames.lua
 BattlegroundTargets-localized-flag.lua

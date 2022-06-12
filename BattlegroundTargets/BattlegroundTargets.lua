@@ -136,7 +136,7 @@ BattlegroundTargets_Character = {};
 BattlegroundTargets_HealersDB = {};
 
 local BattlegroundTargets = CreateFrame("Frame");
-local CROSSFRAC_MOD_VERSION = "v1.2";
+local CROSSFRAC_MOD_VERSION = "v1.3";
 
 local L   = BattlegroundTargets_Localization;
 local BGN = BattlegroundTargets_BGNames;
@@ -440,12 +440,16 @@ local roleLayoutPos = {
 
 local hdlog = BattlegroundTargets_Options  and  BattlegroundTargets_Options.hdlog or false;
 local flagBG = {
-	["Warsong Gulch"] = 1
+	["Warsong Gulch"] = 1,
+	["Eye of the Storm"] = 2,
+	["Twin Peaks"] = 3,
+	["Ala'washte Temple City"] = 4
 };
 
 local flagIDs = {
 	[23333] = 1,
-	[23335] = 1
+	[23335] = 1,
+	[34976] = 1
 };
 
 local sortBy = {
@@ -574,15 +578,18 @@ playerUnitID["mouseover"] = 1;
 
 -- MapName: 				 {xmin, xmax, ymin, ymax}
 local startMapCoordsA = {
-	["AlteracValley"]        = { 417, 424, -56,  -26  },
-	["ArathiBasin"]          = { 230, 258, -105, -78  },
-	["IsleofConquest"]       = { 300, 419, -429, -385 },
-	["NetherstormArena"]     = { 360, 375, -144, -125 },
-	["WarsongGulch"]         = { 370, 402, -85,  -64  },
-	["STVDiamondMineBG"]     = { 477, 514, -175, -140 }, -- Diamond Mine
-	["Battleground01"]       = { 301, 312, -470, -451 }, -- Valley of the Prisoners
-	["gilneasbattleground2"] = { 229, 252, -438, -412 }  -- The Battle for Gilneas
-	-- ["StrandoftheAncients"] = {}
+	["AlteracValley"]          = { 417, 424, -56,  -26  }, -- Альтеракская долина
+	["ArathiBasin"]            = { 230, 258, -105, -78  }, -- Низина Арати
+	["IsleofConquest"]         = { 300, 419, -429, -385 }, -- Остров Завоеваний
+	["NetherstormArena"]       = { 360, 375, -144, -125 }, -- Око Бури
+	["WarsongGulch"]           = { 370, 402, -85,  -64  }, -- Ущелье Песни Войны
+	["STVDiamondMineBG"]       = { 477, 514, -175, -140 }, -- Сверкающие копи
+	["Battleground01"]         = { 301, 312, -470, -451 }, -- Долина Узников
+	["gilneasbattleground2"]   = { 229, 252, -438, -412 }, -- Битва за Гилнеас
+	["TempleCity"]             = { 356, 424, -453, -384},  -- Храмовый город Ала'ваште
+    ["TwinPeaks"]              = { 441, 516, -137, -54},   -- Два Пика
+    ["templeofkotmogu"]        = { 601, 641, -293, -265},  -- Храм Котмогу
+    ["StrandoftheAncients"]    = { 0,     1,   -1,    0}   -- Берег Древних
 }
 --[[
 	
@@ -3447,7 +3454,7 @@ function BattlegroundTargets:CreateOptionsFrame()
 	GVAR.OptionsFrame.MoverBottomText:SetPoint("CENTER", GVAR.OptionsFrame.MoverBottom, "CENTER", 0, 0);
 	GVAR.OptionsFrame.MoverBottomText:SetJustifyH("CENTER");
 	GVAR.OptionsFrame.MoverBottomText:SetTextColor(0.3, 0.3, 0.3, 1);
-	GVAR.OptionsFrame.MoverBottomText:SetText(L["Адаптация аддона для Sirus - https://discord.gg/5JPxXZsj"]);
+	GVAR.OptionsFrame.MoverBottomText:SetText(L["Адаптация аддона для Sirus - https://discord.gg/v9zpA8NCdC"]);
 	
 	GVAR.OptionsFrame.MoverTop:SetScript("OnEnter", function() GVAR.OptionsFrame.MoverTopText:SetTextColor(1, 1, 1, 1); end);
 	GVAR.OptionsFrame.MoverTop:SetScript("OnLeave", function() GVAR.OptionsFrame.MoverTopText:SetTextColor(0.3, 0.3, 0.3, 1); end);

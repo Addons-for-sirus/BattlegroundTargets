@@ -47,7 +47,7 @@ BattlegroundTargets_Localization:CreateLocaleTable({
     ["Show Minimap-Button"] = "Отображать кнопку на мини-карте",
 
     ["click & move"] = "Нажми & перемещай",
-    ["Адаптация аддона для Sirus - https://discord.gg/5JPxXZsj"] = "Адаптация аддона для Sirus - https://discord.gg/5JPxXZsj",
+    ["Адаптация аддона для Sirus - https://discord.gg/v9zpA8NCdC"] = "Адаптация аддона для Sirus - https://discord.gg/v9zpA8NCdC",
     ["BattlegroundTargets does not update if this Tab is opened."] = "BattlegroundTargets не обновляет информацию если эта вкладка открыта.",
 
     ["Close Configuration"] = "Закрыть настройки",

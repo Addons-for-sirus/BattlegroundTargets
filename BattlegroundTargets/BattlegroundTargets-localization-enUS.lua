@@ -46,7 +46,7 @@ BattlegroundTargets_Localization = {
 	["Show Minimap-Button"] = true,
 
 	["click & move"] = true,
-	["Адаптация аддона для Sirus - https://discord.gg/5JPxXZsj"] = true,
+	["Адаптация аддона для Sirus - https://discord.gg/v9zpA8NCdC"] = true,
 	["BattlegroundTargets does not update if this Tab is opened."] = true,
 
 	["Close Configuration"] = true,
