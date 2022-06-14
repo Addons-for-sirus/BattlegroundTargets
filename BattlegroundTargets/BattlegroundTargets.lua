@@ -136,7 +136,7 @@ BattlegroundTargets_Character = {};
 BattlegroundTargets_HealersDB = {};
 
 local BattlegroundTargets = CreateFrame("Frame");
-local CROSSFRAC_MOD_VERSION = "v1.3";
+local CROSSFRAC_MOD_VERSION = "v1.3.1";
 
 local L   = BattlegroundTargets_Localization;
 local BGN = BattlegroundTargets_BGNames;
@@ -5876,7 +5876,7 @@ function BattlegroundTargets:IsBattleground()
 			else
 				if 		mapFileName ~= "StrandoftheAncients" 
 					and mapFileName ~= "templeofkotmogu" 
-					and mapFileName ~= "TempleCityBG" then
+					and mapFileName ~= "TempleCity" then
 					
 						local rawx, rawy = GetPlayerMapPosition("player");
 						if rawx and rawy then
